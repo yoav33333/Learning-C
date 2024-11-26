@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-char string[] = {'1','2','4', '1','2','4'};
-int len = sizeof(string)/sizeof(string[0]);
+//char string[] = {'1','2','4', '1','2','4'};
+char str[] = "12366123";
+int len = sizeof(str)/sizeof(str[0]);
 
 int isDouble(char str[], int len){
     for(int i = 0; i<len/2; i++){
@@ -13,6 +14,6 @@ int isDouble(char str[], int len){
 }
 
 int main(int argc, char const *argv[]){
-    printf("%d", isDouble(string, len));
+    printf("%s", isDouble(str, len)? "true" : "false");
     return 0;
 }
